@@ -1,0 +1,259 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background: #273B47;
+  height: 75px;
+  padding:0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+    margin-left: -35px;
+    margin-top: 5px;
+}
+
+.login-button {
+  background: gray;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, .3);
+  /*border-bottom: 5px solid black;*/
+  font-size: 14px;
+  padding: 0px 10px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  transition: .2s;
+  height: 50px;
+  margin-top: 12px;
+}
+
+.login-button:active {
+  transform: scale(.9);
+}
+
+.login-button.red {
+  background: #ff4842;
+  /*border-color: yellow;*/
+}
+
+.login-button.green {
+  background: #7dcd40;
+  /*border-color: purple;*/
+}
+
+nav {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+nav ol {
+  margin: 0;
+  height: inherit;
+}
+
+nav ol {
+  display: flex;
+}
+nav li {
+  list-style: none;
+  /*margin: 0 10px;*/
+  color: white;
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+nav li:after{
+  content: "|";
+  display: inline-block;
+  margin:0 2px;
+}
+
+nav li:last-child:after{
+  color: #273B47;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  height: inherit;
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+
+  /*border-top: 5px solid transparent;*/
+}
+nav a:hover {
+  /*box-shadow: donde se ubicar la sombra, x, y, difuminado, color;*/
+  box-shadow: inset 0 5px 0 red !important;
+  /*border-top: 5px solid #ff4842;*/
+}
+nav a.is-active {
+  box-shadow: inset 0 5px 0 #7dcd40;
+}
+
+.hero{
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+}
+
+.container-search{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px;
+}
+
+.hero figure{
+    margin: 0;
+    padding: 0;
+}
+
+.hero .image-hero{
+    width: 100%;
+    height: 530px;
+    object-fit: cover;
+}
+
+.hero .description-hero{
+    position: absolute;
+    z-index: 1px;
+    margin-top: -250px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-left: 20px;
+    color: #273B47;
+    width: 490px;
+}
+
+.hero .description-hero .title-hero{
+    margin: 15px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.hero .description-hero img{
+    border: 3px solid gray;
+    border-radius: 25px;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+}
+
+.hero .user-hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15px 10px 15px;
+}
+
+.hero .user-hero .user-hero-desc{
+    display: flex;
+}
+
+.hero .user-hero .user-hero-desc p{
+    margin-left: 15px;
+}
+
+.input-search{    
+    height: 45px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-right: 5px;
+    padding-left: 5px;
+    color: cadetblue;
+}
+
+.button-search{
+    width: 45px;
+    height: 45px;
+    background-image: url(img/search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    background-color: gray;
+    border-color: gray;
+}
+
+.container-hero{
+    width: 100%;    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0 -4px 0;
+}
+
+.news{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-column-gap: 30px;
+    grid-row-gap: 100px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.container-new{
+    width: 350px;
+    height: 300px;
+    color: gray;
+}
+
+.image-new{
+    width: inherit;
+    height: 250px;
+    object-fit: cover;    
+}
+
+.title-new{
+    width: 350px;
+    margin: 0;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;    
+}
+
+.user-new{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-pages{
+    display: flex;
+    margin-top: 110px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-pages p {
+    margin-bottom: 18px;
+}
+
+.list-pages{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.list-pages li{
+    margin: 0 10px 10px;;
+    background-color: aquamarine;
+    border: 1px solid gray;
+    padding: 5px 10px;
+}
+
+.list-pages li a{
+    text-decoration: none;
+    color: black;
+}
+
+
