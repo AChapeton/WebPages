@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    font-family: Lato, sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: : 200px 1fr;
+    
+    grid-template-areas: "header header"
+                         "side-bar movies";
+}
+
+.header{
+    grid-area: header;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: shadow;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
+}
+
+.header .logo{
+    height: 35px;
+    margin-left: 50px;
+}
+
+.header input{
+    width: 500px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    font-size: 16px;
+    padding-left: 5px;    
+}
+
+.header .user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.header .user img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: 3px solid;
+}
+
+.side-bar{
+    grid-area: side-bar;
+    height: 820px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6766;
+}
+
+.side-bar .opciones-side-bar{
+    margin-top: 25px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-bar .ajustes-side-bar{
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.side-bar figure{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side-bar figure img{
+    width: 35px;    
+}
+
+.side-bar p{
+    margin-top: 5px;
+    margin-bottom: 25px;
+    padding: 0;
+}
+
+.movies{
+    grid-area: movies;
+    display: subgrid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 50px 200px 50px 200px 50px 200px;
+    grid-template-areas: "title title title"
+                         "container-movie container-movie container-movie"
+                         "title title title"
+                         "container-movie container-movie container-movie"
+                         "title title title"
+                         "container-movie container-movie container-movie"
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.title{
+    grid-area: title;
+    margin-top: 30px;
+}
+
+.container-movie{
+    grid-area: container-movie;
+    display: inline-block;
+    margin-right: 80px;
+}
+
+.container-movie img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.container-movie .description-movie{
+    background-color: rgba(255,103,102, 0.7);
+    padding: 0;
+    display: block;
+    margin-top: -94px;
+    position: absolute;
+    width: 300px;
+    color: white;
+}
+
+.container-movie .description-movie h4{
+    margin: 0;
+    padding: 8px 8px 0 8px;
+}
+
+.container-movie .description-movie p{
+    margin: 0;
+    padding: 0 8px 8px 8px;
+}
