@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 325px 1fr 1fr;
+    grid-template-rows: 440px 135px 1fr;
+    grid-template-areas: "side-bar video video"
+                         "side-bar description description"
+                         "side-bar comment suggestion";
+}
+
+.side-bar{
+    grid-area: side-bar;
+    display: grid;
+    grid-template-rows: 120px 550px 320px;
+    grid-template-areas: "logo"
+                         "my-playlist"
+                         "friend-playlist";
+    background-color: #151b31;
+    color: white;
+}
+
+.logo{
+    grid-area: logo;
+    height: 120px;   
+    display: grid;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.logo img{
+    
+}
+
+.my-playlist{
+    grid-area: my-playlist;
+    height: 550px;
+    
+}
+
+.my-playlist h3{
+    font-weight: normal;
+    margin: 0 0 0 24px;
+}
+
+.my-playlist ol li{
+    margin-right: 24px;
+    padding: 0 0 20px 24px;
+}
+
+.friend-playlist{
+    grid-area: friend-playlist;
+    height: 320px;    
+}
+
+.friend-playlist h3{
+    font-weight: normal;
+    margin: 0 0 0 24px;
+}
+
+.friend-playlist ul{
+    list-style: none;    
+}
+
+.friend-playlist li{
+    display: flex;
+    margin: 0 0 20px -20px;
+    align-items: center;
+}
+
+.friend-playlist img{
+    background-color: white;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+}
+
+.friend-playlist p{
+    margin-left: 24px;
+}
+
+.video{
+    grid-area: video;
+    border: 1px solid red;
+    height: 440px;
+}
+
+.description{
+    grid-area: description;
+    border: 1px solid red;
+    height: 135px;
+}
+
+.comment{
+    grid-area: comment;
+    border: 1px solid red;
+    width: 600px;
+}
+
+.suggestion{
+    grid-area: suggestion;
+    border: 1px solid red;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+
