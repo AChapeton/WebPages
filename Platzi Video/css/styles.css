@@ -84,15 +84,90 @@ body{
 }
 
 .video{
-    grid-area: video;
-    border: 1px solid red;
+    grid-area: video;    
     height: 440px;
+}
+
+.video .cover{
+    width: 1024px;
+    height: 440px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.video .arrow{
+    position: absolute;
+    margin: 40px 0 0 24px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50px;
+}
+
+.video .arrow img{
+    color: white;
+}
+
+.video .play{
+    position: absolute;
+    margin: 170px 0 0 462px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50px;
+}
+
+.video .play img{    
+    width: 100px;
+    height: 100px;
+    color: white;
 }
 
 .description{
     grid-area: description;
-    border: 1px solid red;
     height: 135px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "video-desc video-desc"
+                         "actions tags";
+}
+
+.video-desc{
+    grid-area: video-desc;
+}
+
+.video-desc h2{
+    margin: 0;
+    color: #6a6c7b;
+    font-weight: normal;
+}
+
+.video-desc h3{
+    margin: 0;
+    color: #b1b1b1;
+    font-weight: normal;
+}
+
+.actions{
+    grid-area: actions;
+    display: flex;
+    align-items: center;
+}
+
+.actions .add{
+    
+}
+
+.actions .repost{
+    
+}
+
+.actions .save{
+    
+}
+
+.tags{
+    grid-area: tags;
 }
 
 .comment{
