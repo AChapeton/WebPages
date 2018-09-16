@@ -137,13 +137,13 @@ body{
 }
 
 .video-desc h2{
-    margin: 0;
+    margin: 18px 0 0 10px;
     color: #6a6c7b;
     font-weight: normal;
 }
 
 .video-desc h3{
-    margin: 0;
+    margin: 0 0 0 10px;
     color: #b1b1b1;
     font-weight: normal;
 }
@@ -152,33 +152,141 @@ body{
     grid-area: actions;
     display: flex;
     align-items: center;
+    margin: 0 0 0 10px;
+    width: 325px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .actions .add{
+    color: white;
+    background-image: linear-gradient(to right, red, pink);
+    padding: 8px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
     
 }
 
 .actions .repost{
-    
+    background-color: white;
+    border: 1px solid white;    
 }
 
 .actions .save{
-    
+    background-color: white;
+    border: 1px solid white;
+}
+
+.actions .repost img, .actions .save img{
+    width: 20px;
 }
 
 .tags{
     grid-area: tags;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 400px;
+}
+
+.tags a{
+    text-decoration: none;
+    color: white;
+    padding: 2px 8px 2px 8px;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.tags .electro{
+    background-color: #9b56fe;
+}
+
+.tags .rock{
+    background-color: #11ecc0;
+}
+
+.tags .eight{
+    background-color: #de1722;
+}
+
+.tags .relax{
+    background-color: #e72a7e;
 }
 
 .comment{
     grid-area: comment;
-    border: 1px solid red;
     width: 600px;
+    padding: 25px 0 0 24px;
+}
+
+.new-comment{
+    display: flex;
+    background-image: linear-gradient(white, lightgray);
+    padding: 5px;
+    width: 500px;
+    border-radius: 5px;
+    margin: 10px 0 0 0;
+    box-shadow: 10px grey;
+    align-items: center;
+}
+
+.new-comment input{
+    background-color: transparent;
+    font-size: 16px;
+    margin: 5px 0 0 10px;
+    border: none;
+}
+
+.new-comment input:focus{
+    border: none;    
+}
+
+.new-comment img{
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.old-comment{
+    display: flex;
+    margin: 18px 0 0 0;
+    font-size: 16px;
+}
+
+.old-comment img{
+    width: 38px;
+    height: 38px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 0 10px 0 0;
 }
 
 .suggestion{
     grid-area: suggestion;
-    border: 1px solid red;
+    padding: 25px 0 0 0;
+}
+
+.title-suggestion{
+    margin: 0 0 10px 0;
+}
+
+.suggest{
+    width: 225px;
+    height: 200px;
+}
+
+.suggest img{
+    width: 225px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, .5);
+}
+
+.suggest p{
+    width: 170px;
+    margin: 5px 0 0 0;
+    font-size: 12px;
 }
 
 p{
