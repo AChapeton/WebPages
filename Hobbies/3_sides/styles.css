@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    font-family: 'Questrial', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 650px;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 20%;
+}
+
+img{
+    width: inherit;
+}
+
+h1{
+    font-size: 3em;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.develop{
+    color: #00997f;
+}
+
+.your{
+    background-color: white;
+    color: black;
+    padding: 0 10px;
+}
